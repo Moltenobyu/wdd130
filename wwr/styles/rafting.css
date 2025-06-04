@@ -1,0 +1,148 @@
+/* Reset all margin and padding and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS variables from your site plan */
+:root {
+  --primary-color: #505033;
+  --secondary-color: #264969;
+  --accent1-color: #cfcfb4;
+  --accent2-color: #b4cde4;
+
+  --heading-font: Georgia, serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* Body style */
+body {
+  font-family: var(--body-font);
+  color: var(--primary-color);
+  background-color: var(--accent1-color);
+  line-height: 1.6;
+}
+
+/* Center content and set max width */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo image style */
+header img {
+  height: 60px;
+}
+
+/* Navigation links */
+nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero div styling */
+.hero {
+  position: relative;
+  margin-top: 24px;
+}
+
+/* Hero image fills container */
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero heading positioned over image */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+  font-family: var(--heading-font);
+}
+
+/* Article positioned over hero */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 16px;
+  width: calc(100% - 40px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Article's image floats right */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+/* Paragraphs, nav, section, article margins and padding */
+nav, p, section, article {
+  margin: 16px 0;
+  padding: 8px 0;
+}
+
+/* Images in "Adventure Awaits You" section */
+section img {
+  margin: 4px;
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Remove underline on social media image links */
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+/* Social media icon sizes */
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+}
